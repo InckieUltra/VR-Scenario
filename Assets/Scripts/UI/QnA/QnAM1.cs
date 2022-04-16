@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class QnAManager : MonoBehaviour
+public class QnAM1 : MonoBehaviour
 {
     PanelManager panelManager;
 	
@@ -13,6 +13,6 @@ public class QnAManager : MonoBehaviour
 	// Start is called before the first frame update
     void Start()
     {
-        panelManager.Push(new Q1_1());
+        panelManager.Push(new Q1());
     }
 }

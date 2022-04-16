@@ -71,6 +71,10 @@ public class HandControl : MonoBehaviour {
 					child.GetComponent<Rigidbody>().isKinematic = false;
  
 					child.GetComponent<Rigidbody>().useGravity = true;
+					
+					Rigidbody thisRigidBody=child.GetComponent<Rigidbody>();
+					
+					thisRigidBody.constraints = RigidbodyConstraints.None;
  
 					child.SetParent(null);
 				}
@@ -89,6 +93,7 @@ public class HandControl : MonoBehaviour {
     }*/
 	private int count =0 ;
 	void OnCollisionStay(Collision collision){
+		Debug.Log(1);
 		count++;
 		if (Input.GetKey(KeyCode.Space))
  

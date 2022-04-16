@@ -20,6 +20,6 @@ public class CntP : BasePanel
 		Text tex;
 		tex = UITool.GetOrAddComponentInChildren<Text>("Text");
 		Debug.Log(tex.text);
-		tex.text="正确:"+go.GetComponent<Cnt>().T+"  错误:"+go.GetComponent<Cnt>().F;
+		tex.text="正确:"+go.GetComponent<Cnt>().T+"    错误:"+go.GetComponent<Cnt>().F;
 	}
 }
