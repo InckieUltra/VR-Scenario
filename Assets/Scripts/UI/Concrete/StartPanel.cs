@@ -15,5 +15,9 @@ public class StartPanel : BasePanel
 			Debug.Log("Start");
 			SceneManager.LoadScene("MainMenu");
 		});
+		UITool.GetOrAddComponentInChildren<Button>("Exit").onClick.AddListener(()=>{
+			Debug.Log("Exit");
+			Application.Quit();
+		});
 	}
 }

@@ -109,23 +109,6 @@ public class HandControl : MonoBehaviour {
  
         }
  
-       else
- 
-        {
-			
- 
-            collision.collider.attachedRigidbody.isKinematic = false;
- 
-            collision.collider.attachedRigidbody.useGravity = true;
- 
-            collision.collider.gameObject.transform.SetParent(null);
- 
-            //tossObject(collider.attachedRigidbody);
- 
-            //tossObject(collider.attachedRigidbody);
- 
-        }
- 
 	}
  
  

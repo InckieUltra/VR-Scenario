@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/StartMenu.unity
+    guid: a9d8e926dd58e7b4a847756b2358b61d
+  - enabled: 1
     path: Assets/Scenes/Stove.unity
     guid: 4912fe6914c84314b9175d3bf684b311
   - enabled: 1
@@ -20,9 +23,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/StovePowderFail.unity
     guid: 8aaebed0fcb20164faeceabb4d2a6db1
-  - enabled: 1
-    path: Assets/Scenes/StartMenu.unity
-    guid: a9d8e926dd58e7b4a847756b2358b61d
   - enabled: 1
     path: Assets/Scenes/SceneMenu.unity
     guid: c65e39f6de73539408684276fa9319e0

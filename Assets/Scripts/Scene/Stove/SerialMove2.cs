@@ -35,9 +35,9 @@ public class SerialMove2 : MonoBehaviour
 	private Thread recvThread; //接收线程
     public string portName = "/dev/cu.usbserial-14410";//串口号
     public int baudRate = 19200;//波特率
-    public Parity parity = Parity.None;//效验位
-    public int dataBits = 8;//数据位
-    public StopBits stopBits = StopBits.One;//停止位
+    //public Parity parity = Parity.None;//效验位
+    //public int dataBits = 8;//数据位
+    //public StopBits stopBits = StopBits.One;//停止位
 
     /*数据传递*/
     private Queue<char> dataQueue = new Queue<char>();//队列数据池
@@ -100,14 +100,6 @@ public class SerialMove2 : MonoBehaviour
             collision.collider.attachedRigidbody.isKinematic = true;
             collision.collider.attachedRigidbody.useGravity = false;
             collision.collider.gameObject.transform.SetParent(this.transform);
-        }
-       else{
-            Debug.Log("3333333");
-            collision.collider.attachedRigidbody.isKinematic = false;
-            collision.collider.attachedRigidbody.useGravity = true;
-            collision.collider.gameObject.transform.SetParent(null);
-            //tossObject(collider.attachedRigidbody);
-            //tossObject(collider.attachedRigidbody);
         }
  
     }
@@ -210,7 +202,7 @@ public class SerialMove2 : MonoBehaviour
     public void OpenPort()
     {
         //创建串口
-        sp = new SerialPort(portName, baudRate, parity, dataBits, stopBits);
+        sp = new SerialPort(portName, baudRate);
         sp.ReadTimeout = 400;
         try
         {
